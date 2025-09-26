@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    <title>Zzz.com</title>
+    <title>C.O.M.P.S</title>
 </head>
 <!-- Header Content -->
     <header>
@@ -33,14 +34,14 @@
     <main>
         <section class="hero-section" id="home">
             <div class="hero-text">
-                <h1>Welcome, User.</h1>
+                <h1 id="welcome-message">Welcome, Guest.</h1>
             </div>
         </section>
 
         <section class="content-section vision-section" id="profile">
             <div class="container">
                 <h2>Our Vision</h2>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <p>"In an era scarred by conflict, our vision is one of enduring peace for all humanity. C.O.M.P.S. was founded on the principle that through vigilant Observation, impartial Evaluation, and swift intervention, a lasting Peace can be achieved. We are a unified force, comprising the best from the Earth Alliance, ZAFT, and the Orb Union, dedicated to transcending old hatreds. Our solemn duty is to monitor global tensions, mediate disputes, and act as the shield for the innocent. We envision a future where cooperation triumphs over confrontation, securing a brighter tomorrow for generations to come."</p>
             </div>
         </section>
 
@@ -48,7 +49,7 @@
             <div class="container">
                 <h2>Portofolio</h2>
                 <div class="portfolio-grid">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <p>Our success is measured not in profit, but in lives saved and conflicts averted. From mediating border disputes like the 'Eurasian Border Crisis' to deploying our flagship, the Millennium (pictured), we leverage cutting-edge technology and elite mobile suit pilots to enforce peace. We stand as the world's shield against the resurgence of war.</p>
                     <div class="portfolio-placeholder"></div>
                 </div>
             </div>
@@ -57,17 +58,16 @@
         <section class="content-section contact-section" id="contact">
             <div class="container">
                 <h2>Contact Us</h2>
-                <form class="contact-form">
+                <form class="contact-form" onsubmit="return validateForm()">
                     <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email"> <textarea placeholder="Message"></textarea> 
-                    <button type="button">Send</button>
-                
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </section>
     </main>
-    
-    <script src="js/script.js" type="module"></script>
+    <script src="js/script.js"></script>
 </body>
 <footer>
      <p>Copyright © 2025 - C.O.M.P.S</p>
