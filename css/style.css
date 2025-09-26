@@ -43,9 +43,6 @@ header {
     align-items: center;
 }
 
-.nav-menu {
-    columns:2
-}
 
 /* --- Logo Area --- */
 .logo-area {
@@ -75,3 +72,92 @@ header {
 .logo_name p:last-child {
     font-size: 0.7em;
 }
+
+/* --- Navigation Menu --- */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #f5f5f5;
+    background-color: #444;
+    padding: 10px 20px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f5f5f5;
+    color: #2e2e2e;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background-image: url('../img/herobanner.jpg'); /* IMPORTANT: Replace with your hero image path */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #444; /* Added for separation */
+}
+
+.hero-text h1 {
+    font-size: 4.5em;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+/* --- Content Sections --- */
+.content-section {
+    padding: 60px 0; /* More padding for content sections */
+    border-bottom: 1px solid #333; /* Subtle separators between sections */
+}
+
+.content-section:last-of-type {
+    border-bottom: none; /* No border on the last section before footer */
+}
+
+.vision-section p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- Portfolio Section --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 40px; /* Space between text and placeholder */
+    align-items: center; /* Vertically align items */
+}
+
+.portfolio-grid p {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.portfolio-placeholder {
+    width: 100%; /* Take full width of its grid column */
+    padding-bottom: 75%; /* Aspect ratio trick (3:4 portrait for example) */
+    background-color: #f5f5f5; /* White background as in image */
+    border-radius: 5px;
+    border: 1px solid #666; /* Subtle border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2e2e2e;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* You can add text to the placeholder if you want, e.g., using a ::before pseudo-element */
+/* .portfolio-placeholder::before { content: "Image Placeholder"; } */
