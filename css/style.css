@@ -1,0 +1,77 @@
+/* --- General Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Michroma', sans-serif;
+    background-color: #1a1a1a; /* Dark background for the whole page */
+    color: #f5f5f5;
+    line-height: 1.6; /* Improve readability of body text */
+}
+
+.container {
+    width: 90%;
+    max-width: 900px; /* Constrains width for better readability */
+    margin: 0 auto;
+    padding: 40px 0; /* Add vertical padding to sections */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+}
+
+/* --- Header & Navbar --- */
+header {
+    background-color: #2e2e2e;
+    padding: 10px 20px;
+    border-bottom: 2px solid #444;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    columns:2
+}
+
+/* --- Logo Area --- */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('../img/logo.jpg'); /* IMPORTANT: Replace with your logo's path */
+    background-size: cover;
+    background-position: center;
+}
+
+.logo_name p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.logo_name p:first-child {
+    font-size: 1.2em;
+}
+
+.logo_name p:last-child {
+    font-size: 0.7em;
+}
