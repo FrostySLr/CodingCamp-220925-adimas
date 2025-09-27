@@ -1,4 +1,4 @@
-# Website Project-1
+# Company Profile Website with Javascrip Integration
 
 # Description
 
