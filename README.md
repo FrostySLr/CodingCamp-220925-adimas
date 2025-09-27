@@ -2,7 +2,7 @@
 
 # Description
 
-A Gundam themed Company Profile website with Javascript Integration. this project was made to fulfill RevoU's Software Engineering Mini Project.
+A Gundam themed Company Profile website with Javascript Integration. this project was made to fulfill RevoU's Coding Camp Mini Project.
 
 It is quite a barebone website
 
